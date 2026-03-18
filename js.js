@@ -13,12 +13,13 @@ const creaNuovaTask = function (contenuto) {
   nuovaTask.addEventListener("mouseenter", function () {
     nuovaTask.style.transform = "scale(1.1)";
     nuovaTask.style.backgroundColor = "#95ff77";
+    nuovaTask.style.cursor = "pointer";
+    nuovaTask.style.padding = "0.2em 0";
   });
 
   nuovaTask.addEventListener("mouseleave", function () {
     nuovaTask.style.transform = "scale(1)";
     nuovaTask.style.backgroundColor = "#2a2e2e";
-    nuovaTask.style.padding = "0.2em 0";
   });
 
   const lista = document.getElementById("lista");
