@@ -6,6 +6,8 @@ body {
   width: 50%;
   margin: 0 auto;
   font-family: "Orbitron", sans-serif;
+  background-image: url(./assets/1052777338503.jpg);
+  background-size: cover;
 }
 
 header {
@@ -15,7 +17,6 @@ header {
 }
 
 main {
-  margin: 0 auto;
   background-color: #2a2e2e;
   border: 2px solid #59ff00;
 }
