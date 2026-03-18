@@ -1,6 +1,18 @@
 c = () => console.log();
 
 const creaNuovaTask = function (contenuto) {
+  const divtask = document.createElement("div");
+  divtask.classList.add("divPerTask");
+
+  const eliminatask = document.createElement("p");
+  eliminatask.classList.add("pPerIcona");
+  eliminatask.innerHTML = '<i class="fas fa-trash-alt"></i>';
+
+  //elimina task
+  eliminatask.addEventListener("click", function () {
+    divtask.remove();
+  });
+
   const nuovaTask = document.createElement("li");
   nuovaTask.innerText = contenuto;
   nuovaTask.addEventListener("click", function (e) {
@@ -23,7 +35,9 @@ const creaNuovaTask = function (contenuto) {
   });
 
   const lista = document.getElementById("lista");
-  lista.appendChild(nuovaTask);
+  divtask.appendChild(nuovaTask);
+  divtask.appendChild(eliminatask);
+  lista.appendChild(divtask);
 };
 
 const toDoSubmitFunction = function (e) {
