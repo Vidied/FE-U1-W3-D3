@@ -6,7 +6,7 @@ const creaNuovaTask = function (contenuto) {
 
   const eliminatask = document.createElement("p");
   eliminatask.classList.add("pPerIcona");
-  eliminatask.innerHTML = '<i class="fas fa-trash-alt"></i>';
+  eliminatask.innerHTML = '<i class="far fa-trash-alt"></i>';
 
   //elimina task
   eliminatask.addEventListener("click", function () {
