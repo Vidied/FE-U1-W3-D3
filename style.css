@@ -58,6 +58,8 @@ li {
 .divPerTask li {
   display: inline-block;
   width: 85%;
+  border: 1px solid #59ff00;
+  padding: 2px;
 }
 
 .pPerIcona {
