@@ -22,16 +22,15 @@ const creaNuovaTask = function (contenuto) {
     nuovaTask.classList.toggle("completato");
   });
 
-  nuovaTask.addEventListener("mouseenter", function () {
-    nuovaTask.style.transform = "scale(1.1)";
-    nuovaTask.style.backgroundColor = "#95ff77";
-    nuovaTask.style.cursor = "pointer";
-    nuovaTask.style.padding = "0.2em 0";
+  divtask.addEventListener("mouseenter", function () {
+    divtask.style.cursor = "pointer";
+    divtask.style.padding = "0.2em 0";
+    divtask.style.backgroundColor = "#95ff77";
+    divtask.style.transform = "scale(1.1)";
   });
-
-  nuovaTask.addEventListener("mouseleave", function () {
-    nuovaTask.style.transform = "scale(1)";
-    nuovaTask.style.backgroundColor = "#2a2e2e";
+  divtask.addEventListener("mouseleave", function () {
+    divtask.style.transform = "scale(1)";
+    divtask.style.backgroundColor = "#2a2e2e";
   });
 
   const lista = document.getElementById("lista");
